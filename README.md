@@ -18,6 +18,6 @@ ECANet-L|-|77.0|70.8|
 |ECANet-M|58.8|-|93.2|
 
 # Acknowledgement
-Our implementation is modified based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation).
-Latency measurement code is borrowed from the [DDRNet](https://github.com/ydhongHIT/DDRNet).
-Thanks for their nice contribution.
+* Our implementation is modified based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation).
+* Latency measurement code is borrowed from the [DDRNet](https://github.com/ydhongHIT/DDRNet).
+* Thanks for their nice contribution.
