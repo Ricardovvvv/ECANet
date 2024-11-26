@@ -2,7 +2,7 @@
 The official implementation of "ECANet:An External-Class-Aware Network for Real-Time Semantic Segmentation of Street Scenes"
 
 # Highlights
-![](figs/performance.pdf)
+![](figs/performance.png)
 
 # Experimental results
 |Model(Cityscapes)|Val(%mIOU)|Test(%mIOU)|FPS|
