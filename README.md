@@ -2,7 +2,23 @@
 The official implementation of "ECANet:An External-Class-Aware Network for Real-Time Semantic Segmentation of Street Scenes"
 
 # Highlights
-![Comparison of inference speed and accuracy for real-time models on test set of Cityscapes.](figs/performance.png)
+![](figs/performance.png)
+<p align="center">Comparison of inference speed and accuracy for real-time models on test set of Cityscapes.</p>
+
+* **External Class Features**: We propose a novel dual-branch network framework, ECANet, which, for the first time, introduces external class features to guide pixel classification, achieving
+high-quality real-time segmentation.
+* **More Accurate and Faster**: ECANet-S achieves 77.8% mIoU with speed of 94.1
+FPS, ECANet-M achieves 80% mIoU with speed
+of 63.2 FPS, and ECANet-L achieves 80.4% mIoU with speed
+of 39.6 FPS.
+* **Efficient Modules**: The novel and efficient modules—SPPFFM, SPCFFM, and DPPM are introduced and can significantly enhance the accuracy of ECANet.
+
+# Overview
+![](figs/ECANet.png)
+<p align="center">The overall architecture of our methods.</p>
+
+# Updates
+
 
 # Experimental results
 |Model(Cityscapes)|Val(%mIOU)|Test(%mIOU)|FPS|
