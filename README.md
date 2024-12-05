@@ -36,6 +36,9 @@ ECANet-L|-|77.0|70.8|
 | :---- | :----: | :----: | :----:|
 |ECANet-M|58.8|-|93.2|
 
+# Prerequisites
+This implementation is based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation). Please refer to their repository for installation and dataset preparation. The inference speed is tested on single RTX 3090 using the method introduced by [DDRNet](https://github.com/ydhongHIT/DDRNet). 
+
 # Acknowledgement
 * Our implementation is modified based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation).
 * Latency measurement code is borrowed from the [DDRNet](https://github.com/ydhongHIT/DDRNet).
