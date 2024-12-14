@@ -44,7 +44,7 @@ This implementation is based on [MMSegmentation](https://github.com/open-mmlab/m
 
 ### 0. Preparation
 
-* Refer to [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) for environment installation and download the [Cityscapes](https://www.cityscapes-dataset.com/) datasets and unzip them in data/cityscapes dirs.
+* Refer to [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) for environment installation and download the [Cityscapes](https://www.cityscapes-dataset.com/) datasets and unzip them in `data/cityscapes` dirs.
 ### 1. Training
 
 * For example, train the ECANet-S on Cityscapes with batch size of 12 on 4 GPUs:
