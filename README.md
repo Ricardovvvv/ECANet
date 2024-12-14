@@ -1,7 +1,7 @@
 # ECANet
 The official implementation of "ECANet:An External-Class-Aware Network for Real-Time Semantic Segmentation of Street Scenes"
 
-# Highlights
+## Highlights
 ![](figs/performance.png)
 <p align="center">Comparison of inference speed and accuracy for real-time models on test set of Cityscapes.</p>
 
@@ -13,15 +13,15 @@ of 63.2 FPS, and ECANet-L achieves 80.4% mIoU with speed
 of 39.6 FPS.
 * **Efficient Modules**: The novel and efficient modules—SPPFFM, SPCFFM, and DPPM are introduced and can significantly enhance the accuracy of ECANet.
 
-# Overview
+## Overview
 ![](figs/ECANet.png)
 <p align="center">The overall architecture of our methods.</p>
 
-# Updates
+## Updates
 * Updated the code for testing model speed and the code for the three modules and additional changes will be coming soon. (Nov/26/2024)
 * The code for the configs and model is released.(Dec/14/2024)
 
-# Experimental results
+## Experimental results
 |Model(Cityscapes)|Val(%mIOU)|Test(%mIOU)|FPS|
 | :---- | :----: | :----: | :----:|
 |ECANet-S|78.5|[77.8](https://www.cityscapes-dataset.com/anonymous-results/?id=a4ff978fe602e83e08ce72c71fbcdc411ef7fa00f58602cf7bc1c6a3bc7ffeb7)|94.1|
@@ -37,10 +37,28 @@ ECANet-L|-|77.0|70.8|
 | :---- | :----: | :----: | :----:|
 |ECANet-M|58.8|-|93.2|
 
-# Prerequisites
+## Prerequisites
 This implementation is based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation). Please refer to their repository for installation and dataset preparation. The inference speed is tested on single RTX 3090 using the method introduced by [DDRNet](https://github.com/ydhongHIT/DDRNet). 
 
-# Acknowledgement
+## Usage
+
+### 0. Preparation
+
+* Refer to [MMSegmentation](https://github.com/open-mmlab/mmsegmentation) for environment installation and download the [Cityscapes](https://www.cityscapes-dataset.com/) datasets and unzip them in data/cityscapes dirs.
+### 1. Training
+
+* For example, train the ECANet-S on Cityscapes with batch size of 12 on 4 GPUs:
+````bash
+cd ECANet
+bash tools/dist_train.sh configs/ECANet/ECANet_S_cityscapes_1024x1024.py 4 --work-dir ECANet_S_cityscapes
+````
+* Or train the ECANet-M on Cityscapes with batch size of 12 on 1 GPU:
+````bash
+python tools/train.py configs/ECANet/ECANet_M_cityscapes_1024x1024.py --cfg-options train_dataloader.batch_size=12
+````
+
+
+## Acknowledgement
 * Our implementation is modified based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation).
 * Latency measurement code is borrowed from the [DDRNet](https://github.com/ydhongHIT/DDRNet).
 * Thanks for their nice contribution.
