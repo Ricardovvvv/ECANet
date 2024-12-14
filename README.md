@@ -19,6 +19,7 @@ of 39.6 FPS.
 
 # Updates
 * Updated the code for testing model speed and the code for the three modules and additional changes will be coming soon. (Nov/26/2024)
+* The code for the configs and model is released.(Dec/14/2024)
 
 # Experimental results
 |Model(Cityscapes)|Val(%mIOU)|Test(%mIOU)|FPS|
