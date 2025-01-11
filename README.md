@@ -1,5 +1,5 @@
 # ECANet
-The official implementation of "ECANet:An External-Class-Aware Network for Real-Time Semantic Segmentation of Street Scenes"
+The official implementation of "Exploring External-Class-Aware Features in Dual-Branch Networks for Semantic Segmentation".
 
 ## Highlights
 ![](figs/performance.png)
