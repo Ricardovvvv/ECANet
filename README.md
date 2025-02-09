@@ -30,12 +30,11 @@ ECANet-L|80.22|[80.4](https://www.cityscapes-dataset.com/anonymous-results/?id=a
 
 |Model(Camvid)|Val(%mIOU)|Test(%mIOU)|FPS|
 | :---- | :----: | :----: | :----:|
-|ECANet-M|-|74.9|91.3|
-ECANet-L|-|77.0|70.8|
+|ECANet-M|-|78.0|116.3|
 
 |Model(BDD)|Val(%mIOU)|Test(%mIOU)|FPS|
 | :---- | :----: | :----: | :----:|
-|ECANet-M|58.8|-|93.2|
+|ECANet-M|62.1|-|110.2|
 
 ## Prerequisites
 This implementation is based on [MMSegmentation](https://github.com/open-mmlab/mmsegmentation). Please refer to their repository for installation and dataset preparation. The inference speed is tested on single RTX 3090 using the method introduced by [DDRNet](https://github.com/ydhongHIT/DDRNet). 
